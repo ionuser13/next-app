@@ -1,12 +1,5 @@
-import Link from "next/link"
-
-const links = [{
-  label: "Home",
-  route: "/",
-}, {
-  label: "About",
-  route: "/about",
-}]
+import { Navigation } from "../components/navigation";
+import "../styles/globals.css";
 
 export default function RootLayout({ children }) {
   return (
@@ -15,19 +8,7 @@ export default function RootLayout({ children }) {
         <title>My first Next App</title>
       </head>
       <body>
-        <header>
-          <nav>
-            <ul>
-              {links.map(({ label, route }) => (
-                <li key={route}>
-                  <Link href={route}>
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </header>
+        <Navigation />
         {children}
       </body>
     </html>
