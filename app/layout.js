@@ -1,5 +1,6 @@
 import { Navigation } from "../components/navigation";
 import "../styles/globals.css";
+import { font } from "./font"
 
 export default function RootLayout({ children }) {
   return (
@@ -7,7 +8,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>My first Next App</title>
       </head>
-      <body>
+      <body className={font.className}>
         <Navigation />
         {children}
       </body>
