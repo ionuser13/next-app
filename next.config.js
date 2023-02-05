@@ -11,6 +11,9 @@ const nextConfig = {
     ],
     appDir: true,
   },
+  images: {
+    domains: ["avatars.dicebar.com"]
+  },
   reactStrictMode: true,
 }
 

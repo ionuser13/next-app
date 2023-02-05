@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>My first Next App</title>
       </head>
-      <body className={font.className}>
+      <body className={font.variable}>
         <Navigation />
         {children}
       </body>
